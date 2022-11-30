@@ -1,4 +1,4 @@
-import { expect,describe,test } from '@jest/globals';
+const { expect,describe,test } = require('@jest/globals');
 const { pairSum } = require('../../src/arrays-and-strings/pair-sum.js')
 
 describe('pairSum', () => {
