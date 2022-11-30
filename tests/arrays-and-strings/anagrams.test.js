@@ -1,5 +1,4 @@
-import { expect,describe,test } from '@jest/globals';
-
+const { expect,describe,test } = require('@jest/globals');
 const { anagrams } = require('../../src/arrays-and-strings/anagrams.js')
 
 describe('anagrams', () => {
