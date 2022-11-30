@@ -1,3 +1,4 @@
+import { expect,describe,test } from '@jest/globals';
 const { mostFrequentChar } = require('../../src/arrays-and-strings/most-frequent-char.js')
 
 describe('mostFrequentChar', () => {

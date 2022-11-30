@@ -1,3 +1,4 @@
+import { expect,describe,test } from '@jest/globals';
 const { compress } = require('../../src/arrays-and-strings/compress.js')
 
 describe('compress', () => {
