@@ -1,12 +1,4 @@
-class Node {
-    /** @type {Node} */
-    next
-
-    constructor(val) {
-        this.val = val
-        this.next = null
-    }
-}
+const {Node} = require('./utils')
 
 const a = new Node('A')
 const b = new Node('B')
