@@ -4,7 +4,17 @@
  * @returns {number} - length of longest streak
  */
 const longestStreak = (head) => {
-    
+    let result = 0 
+
+    let prevValue = undefined
+    let currentStreak = 0 
+    while(head) {
+        currentStreak = (head.val === prevValue) ? currentStreak + 1 : 1
+        result = Math.max(result, currentStreak)
+        prevValue = head.val 
+        head = head.next
+    }
+    return result 
 };
 
 module.exports = {
