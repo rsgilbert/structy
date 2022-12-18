@@ -1,9 +1,9 @@
 /**
- * Write a function, treeLevels, that takes in the root of a binary tree. The function should return a 2-Dimensional array where each subarray represents a level of the tree.
+ * Write a function, levelAverages, that takes in the root of a binary tree that contains number values. The function should return an array containing the average value of each level.
  * @param {BinaryNode} root 
- * @returns {any[][]}
+ * @returns {number[]}
  */
-const treeLevels = (root) => {
+const levelAverages = (root) => {
     let result = []
     // queue since we're using breadth-first search
     // remove from start (.shift)
@@ -16,15 +16,23 @@ const treeLevels = (root) => {
             queue.push({ node: node.left, parentLevel: level })
             queue.push({ node: node.right, parentLevel: level })
             // add to result 
-            if(result[level] === undefined) {
+            if (result[level] === undefined) {
                 result[level] = []
             }
             result[level].push(node.val)
         }
     }
-    return result
+    /**
+     * @param {number[]} arr 
+     * @return {number}
+     */
+    const avg = arr => {
+        return arr.reduce((acc, v) => acc + v, 0) / arr.length
+    }
+
+    return result.map(avg)
 };
 
 module.exports = {
-    treeLevels,
+    levelAverages,
 };
