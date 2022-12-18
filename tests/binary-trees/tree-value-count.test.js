@@ -5,7 +5,7 @@ const { treeSum } = require('../../src/binary-trees/tree-sum.js');
 const { treeValueCount } = require('../../src/binary-trees/tree-value-count.js');
 const { Node } = require('../../src/binary-trees/utils.js');
 
-describe('treePathFinder', () => {
+describe('treeValueCount', () => {
     test('test_00', () => {
         const a = new Node(12);
         const b = new Node(6);

@@ -1,6 +1,5 @@
 
 const { expect, describe, test } = require('@jest/globals');
-const { depthFirstValues } = require('../../src/binary-trees/depth-first-values.js');
 const { maxPathSum } = require('../../src/binary-trees/max-root-to-leaf-path.js');
 const { Node } = require('../../src/binary-trees/utils.js');
 
