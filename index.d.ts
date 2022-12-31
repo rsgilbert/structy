@@ -10,11 +10,5 @@ interface LinkedListNode {
 }
 
 
-// see: https://www.typescriptlang.org/docs/handbook/declaration-files/templates/global-modifying-module-d-ts.html
-declare global {
-    export interface Matchers<R extends void | Promise<void>> {
-        tikTak: number;
-    }
-}
+type Graph<T> = Record<string, T[]> 
 
-// export {}
