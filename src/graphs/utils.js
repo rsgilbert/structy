@@ -1,4 +1,3 @@
-
 class Stack {
     values = []
     push(v) {

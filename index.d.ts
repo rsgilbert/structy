@@ -10,5 +10,5 @@ interface LinkedListNode {
 }
 
 
-type Graph<T> = Record<string, T[]> 
+type Graph = Record<string, any[]> 
 
