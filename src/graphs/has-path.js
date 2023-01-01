@@ -2,7 +2,7 @@ const { Stack } = require("./utils")
 
 /**
  * 
- * @param {Graph<*>} graph 
+ * @param {Graph} graph 
  * @param {*} src 
  * @param {*} dst 
  */

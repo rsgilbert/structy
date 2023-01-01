@@ -1,6 +1,5 @@
 const { expect, describe, test } = require('@jest/globals');
 const { connectedComponentsCount } = require('../../src/graphs/connected-components-count.js');
-const { hasPath } = require('../../src/graphs/has-path.js');
 
 describe('connectedComponentsCount', () => {
     test('test_00', () => {

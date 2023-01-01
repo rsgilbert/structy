@@ -12,7 +12,7 @@ const graph = {
 
 /**
  * use stack to implement depth first
- * @param {Graph<*>} graph 
+ * @param {Graph} graph 
  * @param {*} source 
  */
 const depthFirstPrint = (graph, source) => {
@@ -32,7 +32,7 @@ const depthFirstPrint = (graph, source) => {
 
 /**
  * Use recursion to implement depth first
- * @param {Graph<*>} graph 
+ * @param {Graph} graph 
  * @param {*} source 
  */
 const depthFirstPrintRecur = (graph, source)=> {
@@ -48,7 +48,7 @@ const depthFirstPrintRecur = (graph, source)=> {
 
 /**
  * use queue to implement breadth first
- * @param {Graph<*>} graph 
+ * @param {Graph} graph 
  * @param {*} source 
  */
 const breadthFirstPrintRecur = (graph, source) => {
