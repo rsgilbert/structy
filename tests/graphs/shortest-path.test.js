@@ -3,7 +3,7 @@ const { connectedComponentsCount } = require('../../src/graphs/connected-compone
 const { largestComponent } = require('../../src/graphs/largest-component.js');
 const { shortestPath } = require('../../src/graphs/shortest-path.js');
 
-describe('connectedComponentsCount', () => {
+describe('shortestPath', () => {
     test('test_00', () => {
         const edges = [
             ['w', 'x'],
