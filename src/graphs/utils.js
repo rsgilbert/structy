@@ -36,6 +36,29 @@ class Queue {
     }
 }
 
+/**
+ * Convert a list edges into an adjacency list
+ * @param {any[][]} edges 
+ * @return {Graph}
+ */
+ function adjacencyListFor(edges) {
+    /** @type {Graph} */
+    let result = {}
+    for (let edge of edges) {
+        let node1 = edge[0].toString()
+        let node2 = edge[1].toString()
+        if(!(node1 in result)) {
+            result[node1] = []
+        }
+        if(!(node2 in result)) {
+            result[node2] = []
+        }
+        result[node1].push(node2);
+        result[node2].push(node1);
+    }
+    return result
+}
+
 module.exports = {
-    Stack, Queue
+    Stack, Queue, adjacencyListFor
 }

@@ -46,7 +46,6 @@ function adjacencyListFor(edges) {
         result[node2].push(node1);
     }
     return result
-
 }
 
 module.exports = {
