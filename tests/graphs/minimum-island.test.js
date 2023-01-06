@@ -1,5 +1,4 @@
 const { expect, describe, test } = require('@jest/globals');
-const { islandCount2 } = require('../../src/graphs/island-count-2.js');
 const { minimumIsland } = require('../../src/graphs/minimum-island.js');
 
 describe('minimumIsland', () => {
