@@ -2,7 +2,7 @@ const { expect, describe, test } = require('@jest/globals');
 const { connectedComponentsCount } = require('../../src/graphs/connected-components-count.js');
 const { largestComponent } = require('../../src/graphs/largest-component.js');
 
-describe('connectedComponentsCount', () => {
+describe('largestComponent', () => {
     test('test_00', () => {
         expect(largestComponent({
             0: ['8', '1', '5'],

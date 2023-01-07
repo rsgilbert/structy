@@ -3,6 +3,7 @@ const longestPath = (graph) => {
     for (const node in graph) {
         lengthFor(node, graph, lengths)
     }
+    if(Object.keys(lengths).length === 0) return 0;
     return Math.max(...Object.values(lengths))
 };
 

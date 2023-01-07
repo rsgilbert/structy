@@ -1,6 +1,6 @@
 const { Stack, Queue} = require('./utils.js')
 
-/** @type {Graph<string>} */
+/** @type {Graph} */
 const graph = {
     a: ['b', 'c'],
     b: ['d'],
