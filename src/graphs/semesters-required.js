@@ -51,4 +51,5 @@ function prerequisiteGraphFor(edges) {
 
 module.exports = {
     semestersRequired,
+    prerequisiteGraphFor
 };
