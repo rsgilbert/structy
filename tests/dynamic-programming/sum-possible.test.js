@@ -1,5 +1,4 @@
 const { expect, describe, test } = require('@jest/globals');
-const { fib } = require('../../src/dynamic-programming/fib');
 const { sumPossible } = require('../../src/dynamic-programming/sum-possible');
 
 describe('sumPossible', () => {
