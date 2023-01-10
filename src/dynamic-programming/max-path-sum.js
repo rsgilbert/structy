@@ -16,7 +16,7 @@ class MaxPathSum {
      */
     grid;
 
-    
+
     /**
      * @param {number[][]} grid
      */
@@ -26,10 +26,7 @@ class MaxPathSum {
 
 
     withinBounds(rowIdx, colIdx) {
-        return rowIdx >= 0 &&
-            rowIdx < this.grid.length &&
-            colIdx >= 0 &&
-            colIdx < this.grid[0].length;
+        return rowIdx in this.grid && colIdx in this.grid[0];
     }
 
     nextPositions(rowIdx, colIdx) {
