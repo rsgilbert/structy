@@ -2,7 +2,7 @@ const { expect, describe, test } = require('@jest/globals');
 const { countingChange } = require('../../src/dynamic-programming/counting-change');
 
 describe('countingChange', () => {
-    test.only('test_00', () => {
+    test('test_00', () => {
         /**   amt: 4
          *              [1,2,3]
          *  amt: 3 /           \ 4
@@ -41,7 +41,7 @@ describe('countingChange', () => {
         expect(countingChange(1000, [1, 5, 10, 25])).toBe(142511); // -> 142511
     })
 
-    test.only('test_06', ()=>{
+    test('test_06', ()=>{
         expect(countingChange(240, [1, 2, 3, 4, 5, 6, 7, 8, 9])).toBe(1525987916); // -> 1525987916
     })
 })

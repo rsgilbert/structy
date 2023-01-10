@@ -1,4 +1,4 @@
-const { Stack, Queue } = require("../graphs/utils");
+const { Stack } = require("../graphs/utils");
 
 
 /**
@@ -10,10 +10,10 @@ const { Stack, Queue } = require("../graphs/utils");
  * @returns {number}
  */
 const countingChange = (amount, coins, memo = {}) => {
-    if (amount === 0) return 1;
-    if (coins.length === 0) return 0
+    if(amount === 0) return 1;
+    if(coins.length === 0) return 0 
     if (amount < 0) return 0;
-    if (numsStr([amount, coins]) in memo) return memo[numsStr([amount, coins])];
+    if(numsStr([amount, coins]) in memo) return memo[numsStr([amount, coins])];
 
     const [_c, ...coinsForExclude] = coins;
     const exclude = countingChange(amount, coinsForExclude, memo)
