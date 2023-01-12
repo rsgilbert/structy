@@ -1,5 +1,5 @@
 const { expect, describe, test } = require('@jest/globals');
-const { befittingBrackets } = require('../../src/dynamic-programming/befitting-brackets');
+const { befittingBrackets } = require('../../src/stack/befitting-brackets');
 
 describe('befittingBrackets', () => {
     test('test_00', () => {
