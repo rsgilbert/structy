@@ -1,7 +1,5 @@
 const { expect, describe, test } = require('@jest/globals');
 const { knightlyNumber } = require('../../src/dynamic-programming/knightly-number');
-const { maxPalinSubsequence } = require('../../src/dynamic-programming/max-palin-subsequence');
-
 
 describe('knightlyNumber', () => {
     test('test_00', () => {
