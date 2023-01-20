@@ -1,6 +1,5 @@
 const { expect, describe, test } = require('@jest/globals');
 const { createCombinations } = require('../../src/exhaustive-recursion/create-combinations');
-const { permutations } = require('../../src/exhaustive-recursion/permutations');
 
 
 describe('createCombinations', () => {
