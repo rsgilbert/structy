@@ -1,6 +1,5 @@
 const { expect, describe, test } = require('@jest/globals');
 const { Node } = require('../../src/linked-lists/utils.js');
-const { linkedPalindrome } = require('../../src/mixed-recall/linked-palindrome.js');
 const { middleValue } = require('../../src/mixed-recall/middle-value.js');
 
 describe('middleValue', () => {
