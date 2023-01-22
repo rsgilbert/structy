@@ -1,7 +1,7 @@
 const { expect, describe, test } = require('@jest/globals');
 const { binarySearch } = require('../../src/mixed-recall/binary-search');
 
-describe('breakingBoundaries', () => {
+describe('binarySearch', () => {
     test('test_00', () => {
         expect(binarySearch([0, 1, 2, 3, 4, 5, 6, 7, 8], 6)).toBe(6)
     })
