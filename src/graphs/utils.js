@@ -15,6 +15,9 @@ class Stack {
     isEmpty() {
         return this.values.length === 0
     }
+    isNotEmpty(){ 
+        return !this.isEmpty();
+    }
 }
 
 class Queue {
@@ -33,6 +36,9 @@ class Queue {
     }
     isEmpty() {
         return this.values.length === 0
+    }
+    isNotEmpty(){ 
+        return !this.isEmpty();
     }
 }
 
