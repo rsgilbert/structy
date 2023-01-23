@@ -1,9 +1,8 @@
 const { expect, describe, test } = require('@jest/globals');
 const { Node } = require('../../src/binary-trees/utils');
-const { isBinarySearchTree } = require('../../src/mixed-recall/is-binary-search-tree');
 const { postOrder } = require('../../src/mixed-recall/post-order');
 
-describe('isBinarySearchTree', () => {
+describe('postOrder', () => {
     test('test_00', () => {
         const x = new Node('x');
         const y = new Node('y');
