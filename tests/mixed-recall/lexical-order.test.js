@@ -1,6 +1,4 @@
 const { expect, describe, test } = require('@jest/globals');
-const { Node } = require('../../src/binary-trees/utils.js');
-const { leftyNodes } = require('../../src/mixed-recall/lefty-nodes.js');
 const { lexicalOrder } = require('../../src/mixed-recall/lexical-order.js');
 
 describe('lexicalOrder', () => {

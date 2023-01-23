@@ -26,7 +26,7 @@ const lexicalOrder = (word1, word2, alphabet, i = 0) => {
  * @param {string} alphabet 
  */
 const comesBefore = (c1, c2, alphabet) => {
-    let result = alphabet.indexOf(c1) <= alphabet.indexOf(c2)
+    let result = alphabet.indexOf(c1) < alphabet.indexOf(c2)
     return result;
 }
 
