@@ -65,6 +65,28 @@ class Queue {
     return result
 }
 
+/**
+ * Convert a list edges into a adjacency list for a directed acyclic graph (DAG)
+ * @param {any[][]} edges 
+ * @return {Graph}
+ */
+function dagAdjacencyListFor(edges) {
+    /** @type {Graph} */
+    let result = {}
+    for (let edge of edges) {
+        let node1 = edge[0].toString()
+        let node2 = edge[1].toString()
+        if(!(node1 in result)) {
+            result[node1] = []
+        }
+        if(!(node2 in result)) {
+            result[node2] = []
+        }
+        result[node1].push(node2);
+    }
+    return result
+}
+
 module.exports = {
-    Stack, Queue, adjacencyListFor
+    Stack, Queue, adjacencyListFor, dagAdjacencyListFor
 }

@@ -1,5 +1,4 @@
 const { expect, describe, test } = require('@jest/globals');
-const { detectDictionary } = require('../../src/mixed-recall/detect-dictionary.js');
 const { topologicalOrder } = require('../../src/mixed-recall/topological-order.js');
 
 describe('topologicalOrder', () => {
