@@ -1,6 +1,5 @@
 const { expect, describe, test } = require('@jest/globals');
 const { safeCracking } = require('../../src/mixed-recall/safe-cracking.js');
-const { topologicalOrder } = require('../../src/mixed-recall/topological-order.js');
 
 describe('safeCracking', () => {
     test('test_00', () => {
